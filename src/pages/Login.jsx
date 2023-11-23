@@ -21,7 +21,7 @@ function Login() {
     showPassword: false,
   });
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [showAlert, setShowAlert] = useState(false);
 
   const handleChange = (prop) => (event) => {
@@ -42,8 +42,8 @@ function Login() {
   };
 
   const handleSubmit = () => {
-    navigate('/')
-  }
+    navigate("/user");
+  };
 
   return (
     <div className="w-screen max-h-screen bg-dgka bg-top bg-cover flex justify-center relative">
@@ -55,10 +55,15 @@ function Login() {
           <p className="text-3xl font-semibold font-Fira text-center">
             Hesabınıza daxil olun
           </p>
-          <p className="text-center">Hesab məlumatlarınızı digər şəxslərlə paylaşmayın</p>
+          <p className="text-center">
+            Hesab məlumatlarınızı digər şəxslərlə paylaşmayın
+          </p>
         </div>
         <div className="mt-10 w-full text-center">
-          <form className="flex flex-col gap-5 mx-[50px]" onSubmit={handleSubmit}>
+          <form
+            className="flex flex-col gap-5 mx-[50px]"
+            onSubmit={handleSubmit}
+          >
             <TextField
               required
               id="finCode"
@@ -106,7 +111,9 @@ function Login() {
         <Alert severity="info" className="absolute bottom-3 animate-pulse">
           <AlertTitle>Info</AlertTitle>
           Bu barədə Rəhbərliyə xəbər verin:
-          <a href="tel:+4733378901" className="pl-3">Zəng: +4733378901</a>
+          <a href="tel:+4733378901" className="pl-3">
+            Zəng: +4733378901
+          </a>
         </Alert>
       )}
     </div>
