@@ -45,9 +45,8 @@ export default {
         Fira: ["Fira Sans", "sans-serif"],
       },
       backgroundImage: {
-        "makeup-smearing": "url('../src/assets/makeup-smearing.png')",
-        "eye-makeup": "url('/eye-makeup.jpg')",
-        "dgka": "url('/dgka-bg.jpg')"
+        "dgka": "url('/dgka-bg.jpg')",
+        "avatar": "url('/avatar.png')"
       },
       borderRadius: {
         75: "75%",

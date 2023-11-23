@@ -7,11 +7,15 @@ import MenuItem from "@mui/material/MenuItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography"; 
+import Typography from "@mui/material/Typography";
 import Tooltip from "@mui/material/Tooltip";
 import PersonAdd from "@mui/icons-material/PersonAdd";
 import Settings from "@mui/icons-material/Settings";
 import Logout from "@mui/icons-material/Logout";
+import Badge from "@mui/material/Badge";
+import Icon from "@mdi/react";
+import { FaBell } from "react-icons/fa";
+import { IoMdSettings } from "react-icons/io";
 
 function Navbar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -39,7 +43,11 @@ function Navbar() {
     <div className="w-full p-3 px-5 flex justify-between items-center">
       <div className="w-[170px] max-md:w-[40px]">
         <img src="logo-2.png" alt="" className="w-full max-md:hidden" />
-        <img src="logo-noword.jpg" alt="" className="w-full hidden max-md:flex"/>
+        <img
+          src="logo-noword.jpg"
+          alt=""
+          className="w-full hidden max-md:flex"
+        />
       </div>
       <div>
         <Button id="basic-button" color="inherit">
@@ -88,9 +96,16 @@ function Navbar() {
               aria-haspopup="true"
               aria-expanded={openProfile ? "true" : undefined}
             >
-              <Avatar sx={{ width: 32, height: 32, backgroundColor: '#2279CD' }}>S</Avatar>
+              <Avatar
+                sx={{ width: 32, height: 32, backgroundColor: "#2279CD" }}
+              >
+                <IoMdSettings />
+              </Avatar>
             </IconButton>
           </Tooltip>
+          <Badge badgeContent={4} color="primary">
+            <FaBell className="ml-2 text-2xl" />
+          </Badge>
         </Box>
         <Menu
           anchorEl={showProfile}
@@ -127,12 +142,9 @@ function Navbar() {
           transformOrigin={{ horizontal: "right", vertical: "top" }}
           anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
         >
-          <MenuItem
-            onClick={handleClose}
-            sx={{ display: { md: "flex", lg: "none" } }}
-          >
+          <p className="pl-3" onClick={handleClose}>
             Senan
-          </MenuItem>
+          </p>
           <MenuItem onClick={handleClose}>
             <Avatar /> Profile
           </MenuItem>
