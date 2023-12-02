@@ -46,7 +46,7 @@ function Login() {
   };
 
   return (
-    <div className="w-screen max-h-screen bg-dgka bg-top bg-cover flex justify-center relative">
+    <div className="w-screen max-h-screen bg-dgka bg-top bg-cover flex justify-center relative font-Inter">
       <div className="bg-gega-white min-h-screen w-[600px] opacity-90 max-md:w-full">
         <div className="w-full h-50 flex items-center justify-center pt-5">
           <img src="dgka-logo.png" className="w-[50%] h-full" alt="" />

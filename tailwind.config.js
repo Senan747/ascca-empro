@@ -43,6 +43,7 @@ export default {
       fontFamily: {
         Roboto: ["Roboto", "sans-serif"],
         Fira: ["Fira Sans", "sans-serif"],
+        Inter: ["Inter", "sans-serif"],
       },
       backgroundImage: {
         "dgka": "url('/dgka-bg.jpg')",

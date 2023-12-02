@@ -45,7 +45,7 @@ function Navbar() {
   const handleCloseDialog = () => setOpenDialog(false);
 
   return (
-    <div className="w-full p-3 px-5 flex justify-between items-center">
+    <div className="w-full p-3 px-5 flex justify-between items-center font-Inter border-b-1">
       <div className="w-[170px] max-md:w-[40px]">
         <img src="logo-2.png" alt="" className="w-full max-md:hidden" />
         <img
@@ -55,7 +55,7 @@ function Navbar() {
         />
       </div>
       <div>
-        <Button id="basic-button" color="inherit">
+        <Button id="basic-button" color="inherit" >
           Əsas səhifə
         </Button>
         <Button
