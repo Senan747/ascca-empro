@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import Box from "@mui/material/Box";
@@ -16,10 +16,13 @@ import Badge from "@mui/material/Badge";
 import Icon from "@mdi/react";
 import { FaBell } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
+import AlertDialog from "./AlertDialog";
+import { Dialog } from "@mui/material";
 
 function Navbar() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [showProfile, setShowProfile] = React.useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [showProfile, setShowProfile] = useState(null);
+  const [openDialog, setOpenDialog] = useState(false);
   const open = Boolean(anchorEl);
   const openProfile = Boolean(showProfile);
 
@@ -38,6 +41,8 @@ function Navbar() {
   const handleCloseProfile = () => {
     setShowProfile(null);
   };
+
+  const handleCloseDialog = () => setOpenDialog(false);
 
   return (
     <div className="w-full p-3 px-5 flex justify-between items-center">
@@ -74,11 +79,41 @@ function Navbar() {
         >
           <MenuItem onClick={handleClose}>Tədris planı</MenuItem>
           <MenuItem onClick={handleClose}>Cədvəl</MenuItem>
-          <MenuItem onClick={handleClose}>Hesabatlar</MenuItem>
-          <MenuItem onClick={handleClose}>Müraciətlər</MenuItem>
-          <MenuItem onClick={handleClose}>Təkliflər</MenuItem>
-          <MenuItem onClick={handleClose}>İmtahan</MenuItem>
-          <MenuItem onClick={handleClose}>Kitabxana</MenuItem>
+          <MenuItem
+            onClick={() => {
+              handleClose, setOpenDialog(true);
+            }}
+          >
+            Hesabatlar
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
+              handleClose, setOpenDialog(true);
+            }}
+          >
+            Müraciətlər
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
+              handleClose, setOpenDialog(true);
+            }}
+          >
+            Təkliflər
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
+              handleClose, setOpenDialog(true);
+            }}
+          >
+            İmtahan
+          </MenuItem>
+          <MenuItem
+            onClick={() => {
+              handleClose, setOpenDialog(true);
+            }}
+          >
+            Kitabxana
+          </MenuItem>
         </Menu>
       </div>
 
@@ -173,6 +208,7 @@ function Navbar() {
           </MenuItem>
         </Menu>
       </div>
+      <AlertDialog open={openDialog} onClose={handleCloseDialog} />
     </div>
   );
 }
