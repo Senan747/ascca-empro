@@ -19,6 +19,7 @@ import { IoMdSettings } from "react-icons/io";
 import AlertDialog from "./AlertDialog";
 import { Dialog } from "@mui/material";
 import NotificationModal from "./NotificationModal";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -30,6 +31,7 @@ function Navbar() {
   const openProfile = Boolean(showProfile);
   const openNoti = Boolean(openNotification);
 
+  const navigate = useNavigate();
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -189,6 +191,8 @@ function Navbar() {
                 marginRight: "10px",
 
                 marginBottom: "3px",
+                wordWrap: 'break-word',
+                whiteSpace: 'normal', 
               }}
             >
               Bildirişlər
@@ -203,6 +207,8 @@ function Navbar() {
                 marginRight: "10px",
                 borderRadius: "5px",
                 marginBottom: "3px",
+                wordWrap: 'break-word',
+                whiteSpace: 'normal', 
               }}
             >
               2023-12-08 tarixində Ehtimal nəzəriyyəsi və riyazi statistika
@@ -218,6 +224,8 @@ function Navbar() {
                 marginRight: "10px",
                 borderRadius: "5px",
                 marginBottom: "3px",
+                wordWrap: 'break-word',
+                whiteSpace: 'normal', 
               }}
             >
               İnsan-kompüter interfeysi fənninə 15/11/2023 - 22/11/2023 tarixinə
@@ -232,6 +240,8 @@ function Navbar() {
                 marginRight: "10px",
                 borderRadius: "5px",
                 marginBottom: "3px",
+                wordWrap: 'break-word',
+                whiteSpace: 'normal', 
               }}
             >
               Obyektyönlü proqramlaşdırma fənninə 16/11/2023 - 23/11/2023
@@ -246,6 +256,8 @@ function Navbar() {
                 marginRight: "10px",
                 borderRadius: "5px",
                 marginBottom: "3px",
+                wordWrap: 'break-word',
+                whiteSpace: 'normal', 
               }}
             >
               {" "}
@@ -261,6 +273,8 @@ function Navbar() {
                 marginRight: "10px",
                 borderRadius: "5px",
                 marginBottom: "3px",
+                wordWrap: 'break-word',
+                whiteSpace: 'normal', 
                 textAlign: "center",
                 display: "flex",
                 justifyContent: "center",
@@ -335,7 +349,7 @@ function Navbar() {
             </ListItemIcon>
             Settings
           </MenuItem>
-          <MenuItem onClick={handleClose}>
+          <MenuItem onClick={() => {handleClose(); navigate('/') }}>
             <ListItemIcon>
               <Logout fontSize="small" />
             </ListItemIcon>

@@ -9,7 +9,7 @@ import {
   TableRow,
   Paper,
   TableFooter,
-  Button
+  Button,
 } from "@mui/material";
 import { EventNote, AccessTime } from "@mui/icons-material";
 import data from "../../data.json";
@@ -40,10 +40,16 @@ export default function NotificationModal({ open, onClose }) {
                   },
                 }}
               >
-                <TableCell sx={{ color: "text.primary" }}>
+                <TableCell
+                  sx={{ color: "text.primary", wordWrap: "break-word" }}
+                >
                   <EventNote
                     fontSize="small"
-                    sx={{ marginRight: 1, color: "info.main" }}
+                    sx={{
+                      marginRight: 1,
+                      color: "info.main",
+                      wordWrap: "break-word",
+                    }}
                   />
                   {notification.message}
                 </TableCell>
@@ -62,7 +68,10 @@ export default function NotificationModal({ open, onClose }) {
           ></TableFooter>
         </Table>
       </TableContainer>{" "}
-      <Button sx={{ padding: '13px',    backgroundColor: '#EEFAFE' }} onClick={onClose}>
+      <Button
+        sx={{ padding: "13px", backgroundColor: "#EEFAFE" }}
+        onClick={onClose}
+      >
         Bağla
       </Button>
     </Dialog>
