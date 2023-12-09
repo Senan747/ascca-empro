@@ -1,0 +1,173 @@
+{
+    "notifications": [
+      {
+        "message": "This is a test notification",
+        "date": "22/06/2023 12:07"
+      },
+      {
+        "message": "Reminder: Exam tomorrow at 9 AM in Room 203",
+        "date": "23/06/2023 18:30"
+      },
+      {
+        "message": "New assignment uploaded for Physics class",
+        "date": "25/06/2023 10:45"
+      },
+      {
+        "message": "Upcoming webinar on Career Opportunities in Computer Science",
+        "date": "27/06/2023 14:15"
+      },
+      {
+        "message": "Library due date approaching for 'Introduction to Literature'",
+        "date": "28/06/2023 16:00"
+      },
+      {
+        "message": "Faculty meeting scheduled for next Wednesday at 2 PM",
+        "date": "30/06/2023 11:30"
+      },
+      {
+        "message": "Important: Changes to the academic calendar for the next semester",
+        "date": "01/07/2023 09:20"
+      },
+      {
+        "message": "Career Fair this Friday – Don't miss out on networking opportunities",
+        "date": "03/07/2023 13:45"
+      },
+      {
+        "message": "Reminder: Registration for Fall Semester opens next week",
+        "date": "05/07/2023 08:00"
+      },
+      {
+        "message": "Guest lecture on Artificial Intelligence by Dr. Smith on Monday",
+        "date": "07/07/2023 15:30"
+      },
+      {
+        "message": "Student Council elections – Cast your vote by Friday",
+        "date": "09/07/2023 12:00"
+      },
+      {
+        "message": "Scholarship application deadline extended to the end of the week",
+        "date": "11/07/2023 17:45"
+      },
+      {
+        "message": "Reminder: Parent-Teacher Conferences scheduled for next Thursday",
+        "date": "13/07/2023 14:00"
+      },
+      {
+        "message": "Exciting news: New online learning platform available for students",
+        "date": "15/07/2023 09:30"
+      },
+      {
+        "message": "Internship opportunities for Computer Science majors – Apply now!",
+        "date": "17/07/2023 12:45"
+      },
+      {
+        "message": "Workshop on Effective Study Techniques this Saturday",
+        "date": "19/07/2023 10:00"
+      },
+      {
+        "message": "Reminder: Graduation ceremony rehearsal on Monday at the auditorium",
+        "date": "21/07/2023 16:30"
+      },
+      {
+        "message": "Important notice: Campus maintenance on Wednesday – Plan accordingly",
+        "date": "23/07/2023 08:30"
+      },
+      {
+        "message": "Discussion forum for Math enthusiasts now live – Join the conversation",
+        "date": "25/07/2023 14:20"
+      },
+      {
+        "message": "Midterm grades available on the student portal",
+        "date": "27/07/2023 12:15"
+      },
+      {
+        "message": "Study group forming for Chemistry exam preparation – Sign up today",
+        "date": "29/07/2023 17:00"
+      },
+      {
+        "message": "Reminder: Final project submissions due by the end of the month",
+        "date": "31/07/2023 09:45"
+      },
+      {
+        "message": "Career development workshop series starting next week – Register now",
+        "date": "02/08/2023 15:30"
+      },
+      {
+        "message": "Bookstore sale on textbooks – Get your course materials at a discount",
+        "date": "04/08/2023 11:00"
+      },
+      {
+        "message": "Student achievement awards ceremony on Friday – Congratulations to the winners",
+        "date": "06/08/2023 18:00"
+      },
+      {
+        "message": "Reminder: College fair this Saturday – Explore your options for further studies",
+        "date": "08/08/2023 13:30"
+      },
+      {
+        "message": "Important update: Online class schedule revised for the upcoming semester",
+        "date": "10/08/2023 10:20"
+      },
+      {
+        "message": "Student survey on course satisfaction – Your feedback is valuable",
+        "date": "12/08/2023 16:45"
+      },
+      {
+        "message": "Peer tutoring available for Economics and Statistics – Inquire at the learning center",
+        "date": "14/08/2023 14:15"
+      },
+      {
+        "message": "Exciting announcement: New interdisciplinary course on Innovation and Entrepreneurship",
+        "date": "16/08/2023 09:00"
+      },
+      {
+        "message": "Reminder: Student government elections – Cast your vote online",
+        "date": "18/08/2023 12:30"
+      },
+      {
+        "message": "Career counseling sessions available this week – Schedule an appointment",
+        "date": "20/08/2023 15:45"
+      },
+      {
+        "message": "Student art exhibition opening reception on Monday – Support your peers",
+        "date": "22/08/2023 17:30"
+      },
+      {
+        "message": "Update: Online class login credentials for the new semester sent to your email",
+        "date": "24/08/2023 08:15"
+      },
+      {
+        "message": "Reminder: Payment deadline for tuition fees approaching – Avoid late fees",
+        "date": "26/08/2023 09:50"
+      },
+      {
+        "message": "Orientation day for new students next Wednesday – Welcome to our academic community",
+        "date": "28/08/2023 14:00"
+      },
+      {
+        "message": "Research symposium on campus sustainability – Submit your proposals",
+        "date": "30/08/2023 11:10"
+      },
+      {
+        "message": "Important: Online portal maintenance on Friday – Plan your access accordingly",
+        "date": "01/09/2023 12:00"
+      },
+      {
+        "message": "Student feedback session on curriculum enhancements – Your input matters",
+        "date": "03/09/2023 16:20"
+      },
+      {
+        "message": "Reminder: Academic advising sessions available for course selection",
+        "date": "05/09/2023 10:30"
+      },
+      {
+        "message": "Student film festival submissions now open – Showcase your creativity",
+        "date": "07/09/2023 13:40"
+      },
+      {
+        "message": "Library workshop on research skills this Saturday – Improve your academic writing",
+        "date": "09/09/2023 15:15"
+      }
+    ]
+  }
+  

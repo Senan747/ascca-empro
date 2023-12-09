@@ -18,13 +18,17 @@ import { FaBell } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
 import AlertDialog from "./AlertDialog";
 import { Dialog } from "@mui/material";
+import NotificationModal from "./NotificationModal";
 
 function Navbar() {
   const [anchorEl, setAnchorEl] = useState(null);
   const [showProfile, setShowProfile] = useState(null);
   const [openDialog, setOpenDialog] = useState(false);
+  const [openNotification, setOpenNotification] = useState(null);
+  const [moreNotification, setMoreNotification] = useState(false);
   const open = Boolean(anchorEl);
   const openProfile = Boolean(showProfile);
+  const openNoti = Boolean(openNotification);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -44,6 +48,18 @@ function Navbar() {
 
   const handleCloseDialog = () => setOpenDialog(false);
 
+  const handleNotificationMenuOpen = (event) => {
+    setOpenNotification(event.currentTarget);
+  };
+
+  const handleNotificationMenuClose = () => {
+    setOpenNotification(null);
+  };
+
+  const handleCloseMore = () => {
+    setMoreNotification(!moreNotification);
+  };
+
   return (
     <div className="w-full p-3 px-5 flex justify-between items-center font-Inter border-b-1">
       <div className="w-[170px] max-md:w-[40px]">
@@ -55,7 +71,7 @@ function Navbar() {
         />
       </div>
       <div>
-        <Button id="basic-button" color="inherit" >
+        <Button id="basic-button" color="inherit">
           Əsas səhifə
         </Button>
         <Button
@@ -138,9 +154,129 @@ function Navbar() {
               </Avatar>
             </IconButton>
           </Tooltip>
-          <Badge badgeContent={4} color="primary">
-            <FaBell className="ml-2 text-2xl" />
+          <Badge
+            badgeContent={4}
+            color="primary"
+            onClick={handleNotificationMenuOpen}
+            sx={{ cursor: "pointer" }}
+          >
+            <FaBell className="ml-2 text-2xl relative" />
           </Badge>
+          <Menu
+            anchorEl={openNotification}
+            id="notification-menu"
+            open={openNoti}
+            onClose={handleNotificationMenuClose}
+            PaperProps={{
+              elevation: 0,
+              sx: {
+                overflow: "visible",
+                filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
+                mt: 1.5,
+                fontSize: "10px",
+                // ... (your existing PaperProps styles)
+              },
+            }}
+            transformOrigin={{ horizontal: "right", vertical: "top" }}
+            anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
+          >
+            <MenuItem
+              onClick={handleNotificationMenuClose}
+              sx={{
+                fontSize: "10px",
+
+                marginLeft: "10px",
+                paddingLeft: "2px",
+                marginRight: "10px",
+
+                marginBottom: "3px",
+              }}
+            >
+              Bildirişlər
+            </MenuItem>
+            <MenuItem
+              onClick={handleNotificationMenuClose}
+              sx={{
+                fontSize: "10px",
+                border: "1px solid #ffd369",
+                marginLeft: "10px",
+                paddingLeft: "2px",
+                marginRight: "10px",
+                borderRadius: "5px",
+                marginBottom: "3px",
+              }}
+            >
+              2023-12-08 tarixində Ehtimal nəzəriyyəsi və riyazi statistika
+              fənninə "9" yazıldı Ehtimal nəzəriyyəsi və riyazi statistika
+            </MenuItem>
+            <MenuItem
+              onClick={handleNotificationMenuClose}
+              sx={{
+                fontSize: "10px",
+                border: "1px solid #ffd369",
+                marginLeft: "10px",
+                paddingLeft: "2px",
+                marginRight: "10px",
+                borderRadius: "5px",
+                marginBottom: "3px",
+              }}
+            >
+              İnsan-kompüter interfeysi fənninə 15/11/2023 - 22/11/2023 tarixinə
+              Midterm əlavə edildi
+            </MenuItem>
+            <MenuItem
+              sx={{
+                fontSize: "10px",
+                border: "1px solid #ffd369",
+                marginLeft: "10px",
+                paddingLeft: "2px",
+                marginRight: "10px",
+                borderRadius: "5px",
+                marginBottom: "3px",
+              }}
+            >
+              Obyektyönlü proqramlaşdırma fənninə 16/11/2023 - 23/11/2023
+              tarixinə Midterm əlavə edildi
+            </MenuItem>
+            <MenuItem
+              sx={{
+                fontSize: "10px",
+                border: "1px solid #ffd369",
+                marginLeft: "10px",
+                paddingLeft: "2px",
+                marginRight: "10px",
+                borderRadius: "5px",
+                marginBottom: "3px",
+              }}
+            >
+              {" "}
+              Veb-proqramlaşdırma fənninə 14/11/2023 - 21/11/2023 tarixinə
+              Midterm əlavə edildi Verilənlər bazası sistemləri fənninə
+            </MenuItem>
+            <MenuItem
+              sx={{
+                fontSize: "10px",
+                border: "1px solid #3FA5DE",
+                marginLeft: "10px",
+                paddingLeft: "2px",
+                marginRight: "10px",
+                borderRadius: "5px",
+                marginBottom: "3px",
+                textAlign: "center",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                color: "#3FA5DE",
+              }}
+              onClick={() => {
+                handleNotificationMenuClose();
+                setMoreNotification(!moreNotification);
+              }}
+            >
+              {" "}
+              <button className="text-center">Ətraflı məlumat</button>
+            </MenuItem>
+          </Menu>
         </Box>
         <Menu
           anchorEl={showProfile}
@@ -209,6 +345,7 @@ function Navbar() {
         </Menu>
       </div>
       <AlertDialog open={openDialog} onClose={handleCloseDialog} />
+      <NotificationModal open={moreNotification} onClose={handleCloseMore} />
     </div>
   );
 }
