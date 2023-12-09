@@ -1,6 +1,17 @@
 import React from "react";
-import { Dialog, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper } from "@mui/material";
-import { EventNote, AccessTime } from "@mui/icons-material"; // Importing Material-UI icons
+import {
+  Dialog,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Paper,
+  TableFooter,
+  Button
+} from "@mui/material";
+import { EventNote, AccessTime } from "@mui/icons-material";
 import data from "../../data.json";
 
 export default function NotificationModal({ open, onClose }) {
@@ -10,8 +21,12 @@ export default function NotificationModal({ open, onClose }) {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell sx={{ fontWeight: "bold" }}>Notification</TableCell>
-              <TableCell sx={{ fontWeight: "bold" }}>Date</TableCell>
+              <TableCell sx={{ fontWeight: "bold", color: "primary.main" }}>
+                Notification
+              </TableCell>
+              <TableCell sx={{ fontWeight: "bold", color: "primary.main" }}>
+                Date
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -20,24 +35,36 @@ export default function NotificationModal({ open, onClose }) {
                 key={index}
                 sx={{
                   "&:hover": {
-                    backgroundColor: "#f5f5f5", // Adjust the background color for the hover effect
+                    backgroundColor: "#f5f5f5",
                     cursor: "pointer",
                   },
                 }}
               >
-                <TableCell>
-                  <EventNote fontSize="small" sx={{ marginRight: 1 }} />
+                <TableCell sx={{ color: "text.primary" }}>
+                  <EventNote
+                    fontSize="small"
+                    sx={{ marginRight: 1, color: "info.main" }}
+                  />
                   {notification.message}
                 </TableCell>
-                <TableCell>
-                  <AccessTime fontSize="small" sx={{ marginRight: 1 }} />
+                <TableCell sx={{ color: "text.secondary" }}>
+                  <AccessTime
+                    fontSize="small"
+                    sx={{ marginRight: 1, color: "text.secondary" }}
+                  />
                   {notification.date}
                 </TableCell>
               </TableRow>
             ))}
           </TableBody>
+          <TableFooter
+            sx={{ display: "flex", justifyContent: "center" }}
+          ></TableFooter>
         </Table>
-      </TableContainer>
+      </TableContainer>{" "}
+      <Button sx={{ padding: '13px',    backgroundColor: '#EEFAFE' }} onClick={onClose}>
+        Bağla
+      </Button>
     </Dialog>
   );
 }

@@ -174,7 +174,6 @@ function Navbar() {
                 filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.32))",
                 mt: 1.5,
                 fontSize: "10px",
-                // ... (your existing PaperProps styles)
               },
             }}
             transformOrigin={{ horizontal: "right", vertical: "top" }}
