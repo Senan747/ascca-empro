@@ -1,8 +1,38 @@
-# React + Vite
+Gündəlik həyatınızda 1 cihaz (mobil tətbiq, PC/veb əsaslı tətbiq və ya hər hansı bir cihaz) seçin.
+• Niyə bu cihazı seçmisiniz?
+• Bu cihaz haqqında nə xoşunuza gəlir?
+• Bu cihaz haqqında nəyi bəyənmirsiniz?
+• Cihazın prototipini hazırlayın.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+•	Gündəlik həyatınızda 1 cihaz (mobil tətbiq, PC/veb əsaslı tətbiq və ya hər hansı bir cihaz) seçin:
+Mən veb əsaslı bir tətbiq yaratdım. Bu tətbiqin əsl versiyası emprodur və Ascca tələbələri və müəllimləri üçün yaradılmışdır. 
 
-Currently, two official plugins are available:
+•	Niyə bu cihazı seçmisiniz?
+Bu cihazda gördüyüm bir neçə çatışmamazlıq var idi. Həmçinin dizayn stili yeni tələblərə uyğun deyil. Bu veb saytda gördüyüm əksikliklərdən biridə bu saytın responsiv olmamasıdır. Yəni veb saytı daha kiçik cihazlarda açdıqda user-friendly olmaması faktı ilə üzləşirik. Saytın bəzi pageləri işləmir və bu səbəbdən o pagelərə daxil olduqdu bizi saytdan unauthorized edilir və login səhifəni geri göndərilir.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+•	Bu cihaz haqqında nə xoşunuza gəlir?
+Bu cihazda xoşuma gələn özəlliklər dataların düzgün işlənməsi. Məntiqi və riyazi xətalara yol verilməməsidir. Dizaynı yeni tələblərə uyğun hazırladım və chartlardan, qrafiklərdən istifadə etdim. Yeni texnologiya olan React, Material UI, Tailwind CSS istifadə olunub. Hazır olmayan pagelər, baş verə biləcək xətalar üçün bildirişlər, dialoglar hazırlamışam.
+
+•	Bu cihaz haqqında nəyi bəyənmirsiniz?
+Backend developerlə işləmə şansım olmadığı üçün dəqiq data fetching, posting, updating və ya deleting kimi funksiyaları icra etmə şansım olmadı. Saytın bütün səhifələrinə girişim olmadığı üçün tamamlamaq imkansız oldu.
+
+•	Cihazın prototipini hazırlayın.
+
+Desktop:  
+![image](https://github.com/user-attachments/assets/4039c455-d414-47eb-b876-0766fcb91d35)
+![image](https://github.com/user-attachments/assets/e073f21b-b5a4-42b1-8416-f2396ea5d274)
+
+
+ 
+
+Mobil: 
+![image](https://github.com/user-attachments/assets/20a6af02-084d-4ea7-8fca-b7656c9e058b)
+![image](https://github.com/user-attachments/assets/f690755f-9549-4be7-a10d-7a3150420dde)
+
+             ![image](https://github.com/user-attachments/assets/17ba388a-0a92-4e90-a83f-ccdd9d6c77c7)
+              ![image](https://github.com/user-attachments/assets/74e9a84d-27ad-44ea-bc05-ebd73e6a1112)
+
+Notification:
+![image](https://github.com/user-attachments/assets/7399f58f-2655-44bb-859d-a6d33f483c6e)
+![image](https://github.com/user-attachments/assets/21d28cd3-f4fb-4232-82a4-84943ac0cf99)
+![Uploading image.png…]()
